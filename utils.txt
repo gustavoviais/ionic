@@ -7,10 +7,12 @@ https://github.com/materasystems/curso-de-ferias-2018-mobile/tree/develop
 HEROKU - deploy	
 
 //COMPILAR
-ionic 
+ionic lab
 
 //COMANDOS
 npm i json-server
 
 //TOPICOS
-JSON Server
+- O que é REST
+- JSON Server
+- Prototipação
