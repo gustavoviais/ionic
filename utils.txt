@@ -1,5 +1,16 @@
 //MATERA GITHUB
 https://github.com/materasystems/curso-de-ferias-2018-mobile/tree/develop
 
+
+======DIA 2=======
+//LINKS
+HEROKU - deploy	
+
 //COMPILAR
 ionic 
+
+//COMANDOS
+npm i json-server
+
+//TOPICOS
+JSON Server
