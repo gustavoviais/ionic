@@ -16,3 +16,7 @@ npm i json-server
 - O que é REST
 - JSON Server
 - Prototipação
+
+
+
+======DIA 3=======
