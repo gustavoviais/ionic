@@ -18,5 +18,7 @@ npm i json-server
 - Prototipação
 
 
-
 ======DIA 3=======
+- Criando módulos: criando homepage como um módulo (e não como página)
+- App.Imports
+- Criando um módulo da ProfilePage

@@ -4,13 +4,13 @@ import { IonicPage } from "ionic-angular";
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-report', //apelido
+  templateUrl: 'report.html'
 })
-export class HomePage {
+export class ReportPage {
 
-  constructor(public navCtrl: NavController) {
+    constructor(public navCtrl: NavController) {
 
-  }
+    }
 
 }

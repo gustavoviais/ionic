@@ -4,13 +4,13 @@ import { IonicPage } from "ionic-angular";
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-scanner', //apelido
+  templateUrl: 'scanner.html'
 })
-export class HomePage {
+export class ScannerPage {
 
-  constructor(public navCtrl: NavController) {
+    constructor(public navCtrl: NavController) {
 
-  }
+    }
 
 }

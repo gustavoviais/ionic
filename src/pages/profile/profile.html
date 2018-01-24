@@ -1,13 +1,60 @@
 <ion-header>
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>Profile</ion-title>
-    </ion-navbar>
-  </ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+</ion-header>
 
-  <ion-content padding>
-      Conteúdo da Página
-      <button ion-button (click)="showAlert()">Default</button>
-  </ion-content>
+<ion-content padding>
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-icon name="person"></ion-icon>
+      </ion-col>
+      <ion-col>
+        Nome
+        <br> Email
+        <br>
+        <br>
+        <button ion-button (click)="showAlert()" small>Editar Perfil</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="rowmenu">
+      <ion-col col-auto>
+        Sobre
+      </ion-col>
+      <ion-col col-auto>
+        Amigos
+      </ion-col>
+      <ion-col col-auto>
+        Fotos
+      </ion-col>
+      <ion-col col-auto>
+        Locais
+      </ion-col>
+      <ion-col col-auto>
+        Vídeos
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="rowcontent_1">
+      <ion-col col-auto>
+        <ion-list>
+          <ion-list-header>
+            Sobre
+          </ion-list-header>
+          <ion-item>Profissão</ion-item>
+          <ion-item>Instituição onde estudou</ion-item>
+          <ion-item>Cursos atuais</ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+
+</ion-content>
