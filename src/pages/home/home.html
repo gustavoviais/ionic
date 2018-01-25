@@ -8,11 +8,29 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <ion-grid>
+    <ion-row class="rowmenu">
+      <ion-col>
+        <button ion-item (click)="goToProfile()">
+            <ion-icon name="person"></ion-icon> Meu perfil
+        </button>
+      </ion-col>
+    </ion-row>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+    <ion-row class="rowmenu">
+      <ion-col>
+        <button ion-item (click)="goToScanner()">
+            <ion-icon ios="md-qr-scanner" md="md-qr-scanner"></ion-icon> Scanner
+        </button>
+      </ion-col>
+    </ion-row>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <ion-row class="rowmenu">
+      <ion-col>
+        <button ion-item (click)="goToReport()">
+            <ion-icon ios="ios-create-outline" md="ios-create-outline"></ion-icon> Relatórios
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

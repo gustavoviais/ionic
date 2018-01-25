@@ -25678,14 +25678,14 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-ion-icon {
+page-profile ion-icon {
   font-size: 100px;
 }
 
-.rowmenu {
+page-profile .rowmenu {
   border: 1px solid black;
 }
 
-.rowcontent_1 {
+page-profile .rowcontent_1 {
   margin-top: 20px;
 }
