@@ -1,4 +1,6 @@
 //Providers
+import { ToastService } from '../providers/utils/toast.service';
+import { AlertService } from '../providers/utils/alert.service';
 
 //Native Providers
 import { StatusBar } from '@ionic-native/status-bar';
@@ -15,7 +17,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HomePageModule } from '../pages/home/home.module';
 
 export const PROVIDERS = [
-
+    ToastService,
+    AlertService
 ]
 
 export const NATIVEPROVIDERS = [

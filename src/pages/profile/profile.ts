@@ -1,26 +1,30 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { AlertController } from 'ionic-angular';
 import { IonicPage } from "ionic-angular";
+import { ToastService } from '../../providers/utils/toast.service';
+import { AlertService } from '../../providers/utils/alert.service';
 
 @IonicPage()
 @Component({
-  selector: 'page-profile', //apelido
-  templateUrl: 'profile.html'
+    selector: 'page-profile', //apelido
+    templateUrl: 'profile.html'
 })
 export class ProfilePage {
 
-    constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
+    constructor(public navCtrl: NavController, 
+                private toastService: ToastService, 
+                private alertService: AlertService) { }
 
+    callToaster(){
+        this.toastService.presentToast("Teste");
     }
 
-    showAlert() {
-        let alert = this.alertCtrl.create({
-            title: 'Teste',
-            subTitle: 'Botão de alerta',
-            buttons: ['OK']
-          });
-          alert.present();
+    callAlert(){
+        this.alertService.presentAlert("Título", "Subtítulo");
+    }
+
+    callConfirmAlert(){
+        this.alertService.presentConfirm("Título", "Mensagem?");
     }
 
 }
