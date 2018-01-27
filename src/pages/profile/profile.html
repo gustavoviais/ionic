@@ -12,7 +12,8 @@
 
     <ion-row>
       <ion-col>
-        <ion-icon name="person"></ion-icon>
+        <!-- <ion-icon name="person"></ion-icon> -->
+        <img [src]="user.imageUrl ? user.imageUrl : placeholderPicture" (click)="openGallery()"/>
       </ion-col>
       <ion-col>
         Nome
