@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { IonicPage } from "ionic-angular";
 import { Storage } from '@ionic/storage';
-import { Camera, CameraOptions } from '@ionic-native/camera';
+import { Camera } from '@ionic-native/camera';
 import { ToastService } from '../../providers/utils/toast.service';
 import { AlertService } from '../../providers/utils/alert.service';
 import { OnInit } from '@angular/core'

@@ -22,3 +22,12 @@ npm i json-server
 - Criando módulos: criando homepage como um módulo (e não como página)
 - App.Imports
 - Criando um módulo da ProfilePage
+
+======DIA 5=======
+=> Gerando o apk:
+- ionic platform remove android
+- ionic platform add android
+- ionic cordova build android
+
+execution failed for task ':app:transformClassesWithDesugarForDebug'
+java.io.IOException: Could note delete path
