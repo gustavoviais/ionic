@@ -2,6 +2,7 @@
 import { ToastService } from '../providers/utils/toast.service';
 import { AlertService } from '../providers/utils/alert.service';
 import { ScannerServiceProvider } from '../providers/scanner-service/scanner-service';
+import { AuthServiceProvider } from "../providers/auth-service/auth-service";
 
 //Native Providers
 import { StatusBar } from '@ionic-native/status-bar';
@@ -24,7 +25,8 @@ import { IonicStorageModule } from '@ionic/storage';
 export const PROVIDERS = [
     ToastService,
     AlertService,
-    ScannerServiceProvider
+    ScannerServiceProvider,
+    AuthServiceProvider
 ]
 
 export const NATIVEPROVIDERS = [

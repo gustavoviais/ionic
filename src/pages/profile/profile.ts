@@ -17,7 +17,7 @@ export class ProfilePage implements OnInit {
     private placeholderPicture:string;
     private profilePicture:string;
 
-    user = {id:"", name:"", imageUrl:""};
+    user = {id:"", name:"", email:"", imageUrl:""};
 
     constructor(public navCtrl: NavController,
         private toastService: ToastService,
@@ -28,8 +28,18 @@ export class ProfilePage implements OnInit {
         this.placeholderPicture = "https://api.adorable.io/avatar/200/bob";
      }
 
-    ngOnInit() {
+    ngOnInit() {        
+        this.storage.get('currentUser').then((res) => {
+            this.user.id = res.id;
+            this.user.name = res.nome;
+            this.user.email = res.email;
+            //this.user.imageUrl = res.urlFoto;
+        });
+    }
 
+    logout(){
+        this.storage.remove("currentUser");
+        this.navCtrl.setRoot('LoginPage');
     }
 
     openGallery(): void{

@@ -23,11 +23,11 @@ npm i json-server
 - App.Imports
 - Criando um módulo da ProfilePage
 
-======DIA 5=======
+======DIA 6=======
 => Gerando o apk:
 - ionic platform remove android
 - ionic platform add android
 - ionic cordova build android
 
-execution failed for task ':app:transformClassesWithDesugarForDebug'
-java.io.IOException: Could note delete path
+=====DIA 7=======
+jws.io
